@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slideshow</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="slideshow.css" rel="stylesheet" />
+</head>
+<body>
+<general-slideshow class="g-slideshow">
+    <div class="g-slideshow__slides-outer">
+        <div class="g-slideshow__slides-inner">
+            
+            <!-- Slide 1 -->
+            <div data-js-slide class="g-slideshow__slide">
+                <picture class="g-slideshow__image">
+                    <img class="g-slideshow__img" src="img1-alt.svg" />
+                </picture>
+                <div class="g-slideshow__slide-info">
+                    <h2 class="g-slideshow__header">Header One</h2>
+                    <div class="g-slideshow__summary">
+                        <p>This is a summary for slide one.</p>
+                    </div>
+                    <a class="g-slideshow__link" href="#">Link 1</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div data-js-slide class="g-slideshow__slide">
+                <picture class="g-slideshow__image">
+                    <img class="g-slideshow__img" src="img2.svg" />
+                </picture>
+                <div class="g-slideshow__slide-info">
+                    <h2 class="g-slideshow__header">Header Two</h2>
+                    <div class="g-slideshow__summary">
+                        <p>This is a summary for slide two.</p>
+                    </div>
+                    <a class="g-slideshow__link" href="#">Link 2</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div data-js-slide class="g-slideshow__slide">
+                <picture class="g-slideshow__image">
+                    <img class="g-slideshow__img" src="img3.svg" />
+                </picture>
+                <div class="g-slideshow__slide-info">
+                    <h2 class="g-slideshow__header">Header Three</h2>
+                    <div class="g-slideshow__summary">
+                        <p>This is a summary for slide three.</p>
+                    </div>
+                    <a class="g-slideshow__link" href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation - Arrows -->
+        <div class="g-slideshow__pagers">
+            <button data-js-previous class="g-slideshow__previous">&lt;</button>
+            <button data-js-next class="g-slideshow__next">&gt;</button>
+        </div>
+    </div>
+    <div>
+        <!-- Pagination - dots -->
+        <div class="g-slideshow__dots">
+            <span data-js-dot class="g-slideshow__dot g-slideshow__dot--active"></span>
+            <span data-js-dot class="g-slideshow__dot"></span>
+            <span data-js-dot class="g-slideshow__dot"></span>
+        </div>
+    </div>
+</general-slideshow>
+<script type="module" src="slideshow.js"></script>
+</body>
+</html>
